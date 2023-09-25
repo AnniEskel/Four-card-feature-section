@@ -1,0 +1,143 @@
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Typography */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);   
+}
+
+h1 {
+    font-size: 25px;
+    color: hsl(234, 12%, 34%);
+
+}
+
+h1 strong {
+    font-size: 25px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+.heading-container p {
+    margin-top: 1em;
+}
+
+p {
+    font-size: 12px;
+    color: hsl(234, 12%, 34%);   
+}
+
+h2 {
+    font-weight: 600;
+
+}
+
+/* General */
+body {
+    text-align: center;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.heading-container {
+    margin: auto;
+    padding: 4rem;
+    max-width: 35rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 2em;
+    margin: auto;
+    max-width: fit-content;
+}
+
+/* Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0em 2em;
+    width: 20rem;
+    height: 14rem;
+    text-align: left;
+    border-top: 3px solid;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 30px hsla(229, 6%, 66%, 0.541);
+}
+
+.green {
+    border-color: hsl(180, 62%, 55%);
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.red {
+    border-color: hsl(0, 78%, 62%);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.blue {
+    border-color: hsl(212, 86%, 64%);
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+}
+
+.yellow {
+    border-color: hsl(34, 97%, 64%);
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+.img {
+    margin-left: auto;
+    width: 4em;
+    margin-top: 1em;
+}
+
+.attribution {
+    display: none;
+}
+
+@media (max-width: 950px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .heading-container {
+        max-width: 30rem;
+    }
+    .heading-container p {
+        font-size: 16px;
+        font-weight: 400;
+        color: hsl(229, 6%, 66%);
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+
+}
