@@ -80,6 +80,7 @@ body {
     border-top: 3px solid;
     border-radius: 0.5em;
     box-shadow: 1px 1px 30px hsla(229, 6%, 66%, 0.541);
+    background-color: white;
 }
 
 .green {
